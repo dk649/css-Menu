@@ -96,8 +96,20 @@ nav a.accent-link {
     transition: right 300ms ease-out;
   }
 
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display: none;
+  }
+
   nav.show {
     right: 0;
+  }
+
+  nav.show ~ .overlay {
+    display: block;
   }
   nav ul {
     width: 100%;

@@ -11,14 +11,19 @@
     <title>Document</title>
   </head>
   <body>
-    <button id="open-sidebar-button">
+    <button
+      id="open-sidebar-button"
+      aria-label="open sidebar"
+      aria-expanded="false"
+      aria-controls="navbar"
+    >
       <img src="/assets/menu_40dp_C9C9C9_FILL0_wght300_GRAD0_opsz40.svg" />
     </button>
 
     <nav id="navbar" class="">
       <ul>
         <li>
-          <button id="close-sidebar-button">
+          <button id="close-sidebar-button" aria-label="close sidebar">
             <img
               src="/assets/close_40dp_C9C9C9_FILL0_wght300_GRAD0_opsz40.svg"
             />
@@ -31,6 +36,8 @@
         <li><a class="accent-link" href="#">login</a></li>
       </ul>
     </nav>
+
+    <div id="overlay" class="overlay" aria-hidden="true"></div>
     <main>
       <h1>Navbar</h1>
       <p>
